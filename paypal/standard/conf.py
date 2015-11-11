@@ -5,7 +5,6 @@ class PayPalSettingsError(Exception):
     """Raised when settings be bad."""
 
 
-RECEIVER_EMAIL = settings.PAYPAL_RECEIVER_EMAIL
 
 
 # API Endpoints.
