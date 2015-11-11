@@ -5,6 +5,8 @@ class PayPalSettingsError(Exception):
     """Raised when settings be bad."""
 
 
+VERIFIED_RECEIVERS = getattr(settings, "PAYPAL_VERIFIED_RECEIVERS",
+                             [settings.PAYPAL_RECEIVER_EMAIL])
 
 
 # API Endpoints.
